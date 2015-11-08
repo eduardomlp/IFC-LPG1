@@ -9,14 +9,14 @@ package br.edu.ifcvideira.Lista8;
  *
  * @author Eduardo Ugolini <edu.ugolini2@gmail.com>
  */
-public class VIP extends Ingresso{
-    private double novoValor;
-    
-    public void setNovoValor(double valorAdicional){
-        this.novoValor = valorAdicional;
+public class CamaroteInferior extends VIP{
+    private int localizacao;
+
+    public int getLocalizacao() {
+        return localizacao;
     }
-    
-    public double getNovoValor(){
-        return (this.imprimeValor() + this.novoValor);
+
+    public void setLocalizacao(int localizacao) {
+        this.localizacao = localizacao;
     }
 }
